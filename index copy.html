@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About me, my job, hobbies, and why I’m pursuing this degree.">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .main-info {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .main-info h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .hobbies, .career, .course {
+            background: #e7e7e7;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .hobbies p, .career p, .course p {
+            margin: 10px 0;
+        }
+        .fun-fact {
+            background: #dcdcdc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="main-info">
+            <h1>Your Name: Ahmed El Setouhi</h1>
+            <p>Current/Recent Job Title: Computer Science Student</p>
+        </header>
+
+        <section class="hobbies">
+            <h2 class="section-title">Hobbies and Special Interests</h2>
+            <p>Coding, Sports, Gaming and Reading</p>
+        </section>
+
+        <section class="career-goals">
+            <h2 class="section-title">Reasons for Pursuing This Degree</h2>
+            <p>Creating something out of nothing was the reason I got enamored with coding, I like the sense of accomplishment seeing the final product after a project is completed</p>
+        </section>
+
+        <section class="course">
+            <h2 class="section-title">Reasons for Taking This Course</h2>
+            <p>Software Engineering is bound to be an important course for my future prospects, one that I’ll need for years to come</p>
+        </section>
+
+        <section class="fun-fact">
+            <h2 class="section-title">Fun Fact</h2>
+            <p> Was scouted by a professional football academy when I was 15</p>
+        </section>
+
+<div id="last-updated">
+    Last Updated on <span id="date"></span> 
+</div>
+
+<script>
+    // Correct function syntax and declaration
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Insert the formatted date into the span with id 'date'
+    document.getElementById('date').textContent = formatDate(currentDate);
+</script>
+
+    </div>
+</body>
+</html>
